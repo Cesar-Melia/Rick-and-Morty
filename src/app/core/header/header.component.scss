@@ -1,0 +1,30 @@
+.c-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    font-size: 42px;
+  }
+}
+
+.c-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    margin: 0 30px;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    border: solid black;
+    border-radius: 8px;
+    padding: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
