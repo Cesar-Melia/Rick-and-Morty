@@ -1,0 +1,17 @@
+.c-gallery {
+  display: flex;
+  justify-content: space-between;
+
+  &__character {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__image {
+    align-self: center;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: solid 1px black;
+    width: 80%;
+  }
+}

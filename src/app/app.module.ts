@@ -7,6 +7,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CharactersPageComponent } from './pages/characters-page/characters-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HeaderComponent } from './core/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GalleryComponent } from './shared/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { HeaderComponent } from './core/header/header.component';
     HomePageComponent,
     CharactersPageComponent,
     ContactPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

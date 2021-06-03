@@ -1,0 +1,9 @@
+<div class="c-gallery d-flex justify-content-between flex-wrap">
+    <figure class="c-gallery__character d-flex justify-content-center flex-column col-12 col-md-6 col-lg-3"
+        *ngFor="let item of galleryItems">
+        <img class="c-gallery__image" src="{{item.image}}" alt="{{item.name}}">
+        <figcaption>
+            <h2>{{item.name}}</h2>
+        </figcaption>
+    </figure>
+</div>
