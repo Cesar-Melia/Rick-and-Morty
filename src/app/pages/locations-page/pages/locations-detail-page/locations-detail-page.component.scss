@@ -1,0 +1,28 @@
+.c-loc-detail {
+  margin: 50px 0;
+  max-width: 800px;
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-primary-active);
+  }
+
+  &__text-block {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin: 20px 0 0px 10px;
+    width: 50%;
+
+    &--end {
+      text-align: end;
+      margin: 20px 0 0 0;
+      width: 50%;
+      color: var(--color-primary-active);
+    }
+  }
+}

@@ -15,6 +15,10 @@
     width: 80%;
   }
 
+  &__title {
+    margin-right: 10px;
+  }
+
   &__link {
     text-decoration: none;
     color: var(--color-primary);

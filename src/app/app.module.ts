@@ -11,6 +11,7 @@ import { GalleryComponent } from './shared/gallery/gallery.component';
 import { LocationsPageComponent } from './pages/locations-page/locations-page.component';
 import { CharactersDetailPageComponent } from './pages/characters-page/pages/characters-detail-page/characters-detail-page.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
+import { LocationsDetailPageComponent } from './pages/locations-page/pages/locations-detail-page/locations-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { EpisodesComponent } from './pages/episodes/episodes.component';
     LocationsPageComponent,
     CharactersDetailPageComponent,
     EpisodesComponent,
+    LocationsDetailPageComponent,
   ],
   imports: [
     BrowserModule,

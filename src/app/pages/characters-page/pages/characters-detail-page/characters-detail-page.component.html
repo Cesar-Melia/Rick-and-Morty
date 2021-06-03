@@ -1,4 +1,4 @@
-<section class="c-char-detail d-flex justify-content-center flex-column">
+<section class="c-char-detail d-flex justify-content-center flex-column" *ngIf="character">
     <h2 class="c-char-detail__title">{{character.name}}</h2>
     <div class="c-char-detail__img d-flex justify-content-center">
         <img src="{{character.image}}" alt="{{character.name}}">
@@ -17,7 +17,7 @@
     </div>
     <div class=" c-char-detail__text-block d-flex justify-content-center">
         <span class="c-char-detail__text c-char-detail__text--end">Origin: </span>
-        <span *ngIf="character.origin.name" class="c-char-detail__text">{{character.origin.name}}</span>
+        <span class="c-char-detail__text">{{character.origin.name}}</span>
     </div>
 
 </section>
