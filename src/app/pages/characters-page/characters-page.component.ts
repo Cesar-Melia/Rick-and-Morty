@@ -18,5 +18,4 @@ export class CharactersPageComponent implements OnInit {
       this.characters = charactersData.results;
     })
   }
-
 }

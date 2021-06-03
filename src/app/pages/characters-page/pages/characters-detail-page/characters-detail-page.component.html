@@ -1,0 +1,23 @@
+<section class="c-char-detail d-flex justify-content-center flex-column">
+    <h2 class="c-char-detail__title">{{character.name}}</h2>
+    <div class="c-char-detail__img d-flex justify-content-center">
+        <img src="{{character.image}}" alt="{{character.name}}">
+    </div>
+    <div class="c-char-detail__text-block d-flex justify-content-center">
+        <span class="c-char-detail__text c-char-detail__text--end">Specie: </span>
+        <span class="c-char-detail__text">{{character.species}}</span>
+    </div>
+    <div class=" c-char-detail__text-block d-flex justify-content-center">
+        <span class="c-char-detail__text c-char-detail__text--end">Gender: </span>
+        <span class="c-char-detail__text">{{character.gender}}</span>
+    </div>
+    <div class=" c-char-detail__text-block d-flex justify-content-center">
+        <span class="c-char-detail__text c-char-detail__text--end">Status: </span>
+        <span class="c-char-detail__text">{{character.status}}</span>
+    </div>
+    <div class=" c-char-detail__text-block d-flex justify-content-center">
+        <span class="c-char-detail__text c-char-detail__text--end">Origin: </span>
+        <span *ngIf="character.origin.name" class="c-char-detail__text">{{character.origin.name}}</span>
+    </div>
+
+</section>

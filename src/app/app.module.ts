@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -9,6 +8,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { HeaderComponent } from './core/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './shared/gallery/gallery.component';
+import { LocationsPageComponent } from './pages/locations-page/locations-page.component';
+import { CharactersDetailPageComponent } from './pages/characters-page/pages/characters-detail-page/characters-detail-page.component';
+import { EpisodesComponent } from './pages/episodes/episodes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,10 @@ import { GalleryComponent } from './shared/gallery/gallery.component';
     CharactersPageComponent,
     ContactPageComponent,
     HeaderComponent,
-    GalleryComponent
+    GalleryComponent,
+    LocationsPageComponent,
+    CharactersDetailPageComponent,
+    EpisodesComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,13 @@
     border: solid 1px black;
     width: 80%;
   }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-primary-active);
+    }
+  }
 }
