@@ -1,4 +1,13 @@
-:root {
+// body[data-theme="light"] {
+//   --color-background: rgb(182, 182, 248);
+//   --color-primary: rgb(17, 25, 53);
+//   --color-primary-active: rgb(30, 45, 99);
+//   --color-shadow-blue: rgb(74, 86, 255);
+//   --color-title: #30dffa;
+// }
+
+body {
+  //[data-theme="dark"]
   --color-background: rgb(17, 25, 53);
   --color-primary: rgb(182, 182, 248);
   --color-primary-active: rgb(231, 236, 255);

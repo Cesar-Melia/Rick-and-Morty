@@ -12,6 +12,9 @@ import { LocationsPageComponent } from './pages/locations-page/locations-page.co
 import { CharactersDetailPageComponent } from './pages/characters-page/pages/characters-detail-page/characters-detail-page.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { LocationsDetailPageComponent } from './pages/locations-page/pages/locations-detail-page/locations-detail-page.component';
+import { MarkTextPipe } from './shared/pipes/mark-text.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ThemeComponent } from './core/theme/theme.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,14 @@ import { LocationsDetailPageComponent } from './pages/locations-page/pages/locat
     CharactersDetailPageComponent,
     EpisodesComponent,
     LocationsDetailPageComponent,
+    MarkTextPipe,
+    ThemeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

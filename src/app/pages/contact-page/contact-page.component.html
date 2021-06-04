@@ -1,1 +1,43 @@
-<p>contact-page works!</p>
+<form [formGroup]="contactForm" (submit)="submitForm()" class="c-contact__form d-flex flex-column align-items-center">
+    <div class="c-contact__block d-flex justify-content-between">
+        <label for="name">Name</label>
+        <input formControlName="name" type="text" id="name" class="c-contact__input" placeholder="Pepe">
+    </div>
+    <span class="c-contact__error" *ngIf="submitted && contactForm.controls.name.errors">Name is required and has to
+        have between 2 and 14
+        charters </span>
+    <div class="c-contact__block d-flex justify-content-between">
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" id="email" class="c-contact__input" placeholder="pepe@email.com">
+    </div>
+    <span class="c-contact__error" *ngIf="submitted && contactForm.controls.email.errors">Email is required and has
+        to have email format
+        (name@email.com) </span>
+    <div class="c-contact__block d-flex justify-content-between">
+        <label for="description">Description</label>
+        <textarea formControlName="description" type="textarea" id="description" class="c-contact__textarea"
+            placeholder="Description"></textarea>
+    </div>
+    <span class="c-contact__error" *ngIf="submitted && contactForm.controls.description.errors">Description is
+        required and has to have between 10
+        and 244
+        charters </span>
+    <div class="c-contact__block d-flex justify-content-between">
+        <label for="gender">Gender</label>
+        <select formControlName="gender" type="select" id="gender" class="c-contact__input">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Other</option>
+        </select>
+    </div>
+    <div class="c-contact__block d-flex justify-content-between">
+        <label for="age">Age</label>
+        <input formControlName="age" type="number" id="age" class="c-contact__input" placeholder="25">
+    </div>
+    <span class="c-contact__error" *ngIf="submitted && contactForm.controls.age.errors">Age is required and and must be
+        over 18 </span>
+
+    <input class="c-contact__submit" type="submit">
+
+
+</form>
