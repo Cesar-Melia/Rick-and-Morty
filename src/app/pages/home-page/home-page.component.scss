@@ -1,4 +1,33 @@
 .c-home {
-  width: 100%;
-  height: 400px;
+  max-width: 1200px;
+
+  &__img {
+    width: 300px;
+    height: 150px;
+    margin-top: 80px;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 90%,
+        var(--color-background) 95%
+      ),
+      linear-gradient(to top, transparent 90%, var(--color-background) 95%),
+      url("/assets/images/rick-and-morty-1200.png");
+    background-position: top;
+    background-size: cover;
+
+    @media (min-width: 538px) {
+      width: 450px;
+      height: 200px;
+    }
+
+    @media (min-width: 813px) {
+      width: 675px;
+      height: 300px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 900px;
+      height: 400px;
+    }
+  }
 }

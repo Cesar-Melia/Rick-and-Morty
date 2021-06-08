@@ -14,7 +14,6 @@ import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { LocationsDetailPageComponent } from './pages/locations-page/pages/locations-detail-page/locations-detail-page.component';
 import { MarkTextPipe } from './shared/pipes/mark-text.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ThemeComponent } from './core/theme/theme.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { ThemeComponent } from './core/theme/theme.component';
     EpisodesComponent,
     LocationsDetailPageComponent,
     MarkTextPipe,
-    ThemeComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +36,6 @@ import { ThemeComponent } from './core/theme/theme.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -7,7 +7,7 @@
             <img *ngIf="item.image" class="c-gallery__image" src="{{item.image}}" alt="{{item.name}}">
             <figcaption class="d-flex justify-content-center">
                 <h2 *ngIf="routerLinkStr === '/episodes/'" class="c-gallery__title">{{item.id}} - </h2>
-                <h2>{{item.name | markText: "Rick"}}</h2>
+                <h2>{{item.name}}</h2>
             </figcaption>
         </a>
     </figure>

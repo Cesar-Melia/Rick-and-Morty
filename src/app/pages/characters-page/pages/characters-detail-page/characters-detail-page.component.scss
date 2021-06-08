@@ -1,6 +1,6 @@
 .c-char-detail {
   margin: 50px 0;
-  max-width: 800px;
+  max-width: 1200px;
 
   &__title {
     text-align: center;
@@ -13,6 +13,7 @@
 
     img {
       border-radius: 50%;
+      border: solid 5px var(--color-primary);
     }
   }
 
