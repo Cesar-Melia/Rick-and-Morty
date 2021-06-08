@@ -12,8 +12,16 @@
   }
 
   &__img {
-    width: 600px;
+    width: 250px;
     margin: auto;
+
+    @media (min-width: 576px) {
+      width: 400px;
+    }
+
+    @media (min-width: 813px) {
+      width: 600px;
+    }
   }
 }
 
@@ -21,13 +29,20 @@
   margin: 0 50px;
 
   &__link {
-    margin: 0 10px;
-    font-size: 24px;
+    margin: 0 5px;
+    font-size: 18px;
     text-decoration: none;
     color: var(--color-primary);
     border: solid var(--color-primary);
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 8px;
+
+    @media (min-width: 813px) {
+      font-size: 24px;
+      border-radius: 15px;
+      padding: 10px;
+      margin: 0 10px;
+    }
 
     &:hover {
       border: dotted;
